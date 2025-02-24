@@ -35,6 +35,7 @@ describe('PostService', () => {
       expect(posts).toEqual(mockPosts);
     });
 
+    //expectOne() returns a TestRequest object, which you can use to verify the request.
     const req = httpMock.expectOne('https://jsonplaceholder.typicode.com/posts');
     expect(req.request.method).toBe('GET');
 

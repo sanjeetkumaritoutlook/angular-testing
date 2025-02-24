@@ -1,0 +1,28 @@
+npm install @angular/cli@17
+
+not globally
+
+If you prefer to use the traditional NgModules structure, add the --no-standalone flag:
+
+ng new angular-testing --no-standalone
+
+ng serve --open
+
+cd angular-testing
+ng version
+
+ng s --o
+
+
+====
+traditional unit testing:
+ Jasmine (test framework) 
+ Karma (test runner)  localhost:9876  (browser , no headless)
+
+===
+generate component:
+ng generate component first-component
+first-component.component.spec.ts (Unit test file)
+This file already includes a basic test setup using Jasmine and TestBed.
+
+

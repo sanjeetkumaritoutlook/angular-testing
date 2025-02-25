@@ -10,12 +10,6 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
-  "jest": {
-  "preset": "jest-preset-angular",
-  "setupFilesAfterEnv": ["<rootDir>/setup-jest.ts"],
-  "testMatch": ["**/*.spec.ts"],
-  "transformIgnorePatterns": ["node_modules/(?!.*\\.mjs$)"]
- },
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",

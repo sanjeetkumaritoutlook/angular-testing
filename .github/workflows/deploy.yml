@@ -45,11 +45,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: ./dist/angular-testing
+          path: ./dist/angular-testing/browser  # Ensure it matches actual build output
     
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/angular-testing
+          publish_dir: ./dist/angular-testing/browser  # Ensure this matches the output path
       
